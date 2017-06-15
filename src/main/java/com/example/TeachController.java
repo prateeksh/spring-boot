@@ -34,7 +34,7 @@ public class TeachController {
         return new ResponseEntity<TeachData>(user, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/addnew", method = RequestMethod.POST)
+    @RequestMapping(value = "/addteach", method = RequestMethod.POST)
     public ResponseEntity<TeachData> update(@RequestBody TeachData user) {
         repository.save(user);
         return get(user.getId());
