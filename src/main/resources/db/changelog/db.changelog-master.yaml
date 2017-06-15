@@ -31,7 +31,7 @@ databaseChangeLog:
         - createTable:
             tableName: teachdata
             columns:
-              -column:
+              - column:
                   name: id
                   type: bigint
                   autoIncement: true
